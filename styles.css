@@ -1,129 +1,127 @@
-/* General Styles */
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-}
-
-/* Header */
-header {
-    background: #333;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-style: italic;
-    margin-top: 10px;
+  line-height: 1.6;
 }
 
 /* Navigation Menu */
-nav {
-    background: #111;
-    padding: 10px 0;
-}
-
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #00ccff;
+  text-decoration: underline;
+}
+
+/* Header Section */
+header {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.header-home {
+  background-color: orange; 
+}
+
+.header-about {
+  background-color: #007BFF; 
+}
+
+.header-awards {
+  background-color: gold; 
+}
+
+.header-books {
+  background-color: grey; 
 }
 
 /* Main Content Layout */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 40px auto;
-    padding: 20px;
-    gap: 30px;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.left-section {
-    flex: 1;
-    text-align: center;
+/* Left Section */
+.info-section {
+  width: 65%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.left-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Right Section */
+.profile-photo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.right-section {
-    flex: 2;
-    text-align: left;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.profile-photo img {
+  max-width: 100%;
+  border-radius: 10px; /* Adjust for subtle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-.right-section h2 {
-    font-size: 2rem;
-    color: #333;
-    border-bottom: 2px solid #00ccff;
-    padding-bottom: 10px;
-}
-
-.right-section p {
-    font-size: 1.2rem;
-    color: #444;
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        padding: 10px;
-    }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .right-section {
-        margin-top: 20px;
-    }
+  .info-section, .profile-photo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
+body {
+    font-family: Arial, sans-serif;
+}
+
+.credits {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center; 
+    background-color:  #333; 
+    color:white;
+    padding: 10px; 
+    font-family: Arial, sans-serif; 
+}
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer a {
+    color: #007BFF; 
+   
+}
+
+
